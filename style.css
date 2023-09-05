@@ -1,8 +1,20 @@
 :root {
-    --colorone: #C9F2C7;
-    --colortwo: #ACECA1;
-    --colorthree: #629460;
-    --colorfour: #243119;
+    --textcolor: black;
+    --colorfour: #C9F2C7;
+    --colorthree: #ACECA1;
+    --colortwo: #629460;
+    --colorone: #243119;
+}
+
+@media (prefers-color-scheme:dark){
+    :root{
+        --textcolor: white;
+        background-color: var(--colorfour);
+        --colorone: #C9F2C7;
+        --colortwo: #ACECA1;
+        --colorthree: #629460;
+        --colorfour: #243119;
+    }
 }
 
 * {
@@ -47,7 +59,7 @@ header {
 .navbar a {
 
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--textcolor);
     font-weight: 500;
     text-decoration: none;
 }
@@ -109,7 +121,7 @@ header {
 }
 
 .form{
-
+    color: var(--textcolor);
     width: 80%;
     padding: 20px;
     border: 5px solid var(--colortwo);
@@ -132,11 +144,24 @@ header {
     width: 100%;
 }
 
+.button{
+    background-color: var(--colorthree);
+    color: var(--textcolor);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button:hover{
+    
+    background-color: var(--colortwo);
+}
+
 /* ----------------------------------------- */
 
 #mainfooter{
     background: var(--colorthree); 
-    color: #fff;
+    color: var(--textcolor);
     text-align: center;
     padding: 0.3%;
     margin-bottom: 0;
@@ -145,18 +170,6 @@ header {
 
 #mainfooter p{
     font-size: 2vw;
-}
-
-.button{
-    background-color: var(--colorfour);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
-}
-
-.button:hover{
-    background-color: var(--colorthree);
 }
 
 /* ---------------------------------------------------- */
