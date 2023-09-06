@@ -1,3 +1,5 @@
+/* -----------start color schemes--------------------- */
+
 :root {
     --textcolor: black;
     --colorfour: #C9F2C7;
@@ -9,13 +11,19 @@
 @media (prefers-color-scheme:dark){
     :root{
         --textcolor: white;
-        background-color: var(--colorfour);
         --colorone: #C9F2C7;
         --colortwo: #ACECA1;
         --colorthree: #629460;
         --colorfour: #243119;
+        background-color: var(--colorfour);   
     }
+
 }
+
+/* -----------end color schemes--------------------- */
+
+/* ----------------start defaults------------------------------ */
+
 
 * {
     margin: 0;
@@ -26,6 +34,10 @@
     line-height: 1.6rem;
 }
 
+/* ----------------end defaults------------------------------ */
+
+
+/* -----------------start header/navbar--------------------------- */
 
 header {
     position: sticky;
@@ -78,7 +90,10 @@ header {
     transform: scale(1.2);
 }
 
-/* -------------------------------------------- */
+/* -----------------end header/navbar--------------------------- */
+
+
+/* -----------------start landing image--------------------------- */
 
 .land {
     position: relative;
@@ -112,7 +127,10 @@ header {
     line-height: 100%;
 }
 
-/* ---------------------------------------------------- */
+/* ---------------------end landing image------------------- */
+
+/* -----------------start form-------------------------- */
+
 
 .formbox{
     display: flex;
@@ -153,11 +171,14 @@ header {
 }
 
 .button:hover{
-    
+
     background-color: var(--colortwo);
 }
 
-/* ----------------------------------------- */
+/* ---------------------end form-------------------- */
+
+/* -----------------start footer--------------------------- */
+
 
 #mainfooter{
     background: var(--colorthree); 
@@ -172,4 +193,4 @@ header {
     font-size: 2vw;
 }
 
-/* ---------------------------------------------------- */
+/* ---------------end footer----------------------- */
